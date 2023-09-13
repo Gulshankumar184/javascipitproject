@@ -84,6 +84,7 @@ function navSlide() {
   function getCardsData() {
     $.get("https://5d76bf96515d1a0014085cf9.mockapi.io/product", function(data) {
       var responseData = data;
+        console.log(responseData)
       for (var i = 0; i < responseData.length; i++) {
         if (responseData[i].isAccessory === false) {
           clothingCards.append(
